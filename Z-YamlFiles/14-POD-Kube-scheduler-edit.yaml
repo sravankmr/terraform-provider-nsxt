@@ -1,0 +1,20 @@
+- apiGroups:
+  - ""
+  resourceNames:
+  - kube-scheduler
+  - my-scheduler
+  resources:
+  - endpoints
+  verbs:
+  - delete
+  - get
+  - patch
+  - update
+- apiGroups:
+  - storage.k8s.io
+  resources:
+  - storageclasses
+  verbs:
+  - watch
+  - list
+  - get
